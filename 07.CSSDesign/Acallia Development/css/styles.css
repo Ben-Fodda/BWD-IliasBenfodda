@@ -1,0 +1,141 @@
+/**
+ *
+ * Common styles
+ *
+ * @author !Ilias Ben-Fodda!
+ *
+ */ 
+
+/* ===========================================
+   General
+   =========================================== */
+
+/* html, body and general element styles here */
+/* ... */
+*{
+ font-family:'Roboto';
+}
+
+body{
+  background-color: #dfdfdf;
+  border-top:#dfdfdf solid 15px ;
+  border-radius: 15px 15px 0 0;
+}
+
+
+/* ===========================================
+   Menu
+   =========================================== */
+
+/* menu styles here */
+/* ... */
+
+nav ul{
+   display: flex;
+   list-style-type: none;
+}
+
+nav a {
+   margin: 0 10px;
+   padding: 10px;
+   text-decoration: none;
+}
+
+nav a:hover {
+   background-color: #B52025;
+   transition: 0.3s;
+}
+
+.active {
+   background-color: #B52025;
+   color: #dfdfdf;
+}
+/* ===========================================
+   Banner
+   =========================================== */
+
+/* banner styles here */
+/* ... */
+#banner{
+   background-image: url(../img/banner.jpg);
+   background-repeat: no-repeat;
+   border: 10px solid #B52025;
+   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}  
+ 
+#banner p {
+   color: #dfdfdf;
+   background-color: #000;
+}
+
+/* ===========================================
+   Main
+   =========================================== */
+
+/* main styles here */
+/* ... */
+
+main,header {
+   background-color: #dfdfdf;
+}
+
+h3 {
+   color: #B52025;
+   text-transform: uppercase;
+}
+
+h3::after {
+    content: '→'
+}
+
+a {
+   text-decoration: none;
+}
+
+.minibanner {
+   border:#dfdfdf solid 2px;
+}
+
+.more a {
+   color: #B52025;
+   border: #B52025 solid 2px;
+   padding: 5px;
+   border-radius: 10px;
+}
+.more a:hover{
+   background-color: #FDEAEB;
+   transition: 0.3s;
+}
+
+.more a::after{
+    content: '>>';
+   
+}
+
+.more {
+   text-align: right !important;
+}
+
+#email {
+   background-color: #FDEAEB;
+}
+
+button {
+   color: #dfdfdf;
+   background-color: #B52025;
+}
+
+#content section p {
+   text-align: justify;
+}
+/* ===========================================
+   Footer
+   =========================================== */
+
+/* footer styles here */
+/* ... */
+footer{
+   text-align: center;
+   border-top: #dfdfdf dotted 3px;
+   background-image: linear-gradient( #dfdfdf,#dfdfdf);
+}
