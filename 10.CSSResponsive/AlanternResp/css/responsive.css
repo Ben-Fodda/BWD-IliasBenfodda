@@ -1,0 +1,64 @@
+/**
+ * Media queries
+ *
+ * @author Rogier van der Linde <rogier.vanderlinde@kahosl.be>
+ *
+ */
+
+ @media (min-width: 500px) {
+    .mobile-only {
+       display: none;
+    }
+
+    
+  .body_banner{
+        padding-left: 80px;
+        max-width: 300px;
+    }
+
+    .services {
+      display: grid; 
+      gap: 30px ;
+      grid-template-columns: repeat(1, 1fr); 
+      grid-template-rows: repeat(1, 1fr); 
+    }
+    
+    .main__recent .works{
+      display: grid;
+      gap: 10px ;
+      grid-template-columns:repeat(1,1fr) ;
+      grid-template-rows: repeat(1,1fr);
+    }
+
+    .footer__doormat .wrapper {
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .footer__bottom .wrapper {
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .footer__bottom .social {
+      margin-top: 20px;
+    }
+}
+
+@media(min-width: 700px) {
+     .services {
+          display: grid;
+          gap:30px; 
+          grid-template-columns: repeat(4,1fr);
+     }
+
+     .quote__tagline {
+            margin-right: 20px;
+     }
+
+     .footer__doormat {
+        display: grid;
+        grid-template-columns: repeat (4,1fr);
+     }
+}
