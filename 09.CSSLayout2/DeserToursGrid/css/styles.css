@@ -1,0 +1,82 @@
+/**
+ * Layout styles for Desert Tours
+ *
+ * @author Rogier van der Linde <rogier.vanderlinde@kahosl.be>
+ *
+ */
+
+/* GENERAL */
+/* ======= */
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+/* ====== */
+
+header .wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin: 17px;
+}
+/* MAIN */
+/* ====== */
+/* CONTENT */
+/* ======= */
+img {
+    max-width: 100%;
+}
+
+#gallery ul {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    column-gap: 5%;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 66% 33%;
+    column-gap: 5%;
+}
+
+.visual {
+    float: left;
+    margin-right: 15px;
+}
+
+.thumb {
+    float: right;
+    margin-left: 15px;
+}
+
+.readmore {
+    text-align: right;
+ }
+
+/* DOORMAT */
+/* ======= */
+
+#doormat .wrapper {
+    display: grid;
+    grid-template-columns: 40% 20% 20% 20%;
+    column-gap: 5%;
+}
+/* FOOTER */
+/* ======= */
+footer .wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
