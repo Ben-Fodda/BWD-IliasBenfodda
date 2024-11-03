@@ -1,0 +1,111 @@
+/* ===========================================
+   Media queries
+   =========================================== */
+  /* Make the layout flexible */
+body {
+   max-width: 1200px; /* Changed from fixed width */
+}
+
+main {
+   grid-template-columns: 2fr 1fr; /* Uses flexible fr units */
+}
+
+/* Breakpoint 1 - 500px */
+@media (min-width: 500px) {
+   .post__footer .comments {
+      display: block; /* Show comments above 500px */
+   }
+}
+
+@media (max-width: 500px) {
+   .post__footer .comments {
+      display: none; /* Hide comments below 500px */
+   }
+}
+
+/* Breakpoint 2 - 700px */
+@media (min-width: 700px) {
+   .footer__buttons,
+   .social__list {
+      flex-direction: row; /* Display side by side */
+   }
+}
+
+/* Breakpoint 3 - 900px */
+@media (min-width: 900px) {
+   nav ul {
+      flex-direction: row; /* Horizontal main menu */
+   }
+   main {
+      grid-template-columns: 2fr 1fr; /* Two-column layout */
+   }
+}
+
+/* Additional Adjustments */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+   body {
+      font-size: 14px;
+   }
+
+   .header__title {
+      font-size: 2em;
+   }
+
+   main {
+      grid-template-columns: 1fr;
+      padding: 1.5em;
+   }
+
+   .card {
+      margin-bottom: 1.5em;
+   }
+
+   .site__footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+   }
+
+   .social__list {
+      justify-content: center;
+   }
+}
+
+/* Smartphone (480px and below) */
+@media (max-width: 480px) {
+   body {
+      font-size: 13px;
+      padding: 0 1em;
+   }
+
+   .header__title {
+      font-size: 1.8em;
+   }
+
+   nav ul {
+      flex-direction: column;
+   }
+
+   .button {
+      padding: 0.4em 0.8em;
+   }
+
+   .post__title {
+      font-size: 1.3em;
+   }
+
+   .post__subtitle {
+      font-size: 1.1em;
+   }
+
+   .card__title {
+      font-size: 1.2em;
+   }
+
+   .site__footer {
+      flex-direction: column;
+      text-align: center;
+   }
+}
