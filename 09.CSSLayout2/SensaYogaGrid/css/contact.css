@@ -1,0 +1,72 @@
+/* ===========================================
+   Main
+   =========================================== */
+
+/* top */
+
+#main_top {
+   padding: 30px 15px 0 15px;
+}
+
+#main_top h2 {
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+address {
+   font-size: 14px;
+   font-style: normal;
+   line-height: 1.6;
+   margin-bottom: 20px;
+}
+
+/* bottom */
+
+#main_bottom {
+   padding: 30px 15px 0 15px;
+}
+
+iframe {
+   border: none;
+   width: 100%;
+}
+
+/* form */
+
+form label {
+   font-size: 16px;
+   font-style: italic;
+}
+
+form input,
+form select {
+   padding: 7px;
+}
+
+#bottom_content {
+   display: grid;
+   grid-template-columns: 47% 47%;
+   column-gap: 5%;
+}
+
+.maps {
+   height: 100%;
+}
+
+.info__form {
+   display: grid;
+   grid-template-columns: auto;
+}
+
+.info__form p {
+   display: grid;
+   grid-template-columns: 30% 70%;
+}
+
+.info__form p * {
+   width: 100%;
+}
+
+#inpMessage {
+   height: 100px;
+}
